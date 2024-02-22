@@ -1,6 +1,6 @@
 FROM alpine:latest
 RUN apk add --no-cache openjre11
-#RUN apk add --no-cache tomcat-native
+RUN apk add --no-cache tomcat-native
 
 #ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk
 
@@ -10,6 +10,6 @@ RUN apk add --no-cache openjre11
 #    && rm apache-tomcat-9.0.0.M1.tar.gz \
 #    && chmod +x /opt/tomcat/bin/*.sh
 
-#EXPOSE 8080
+EXPOSE 8080
 
-#CMD ["/opt/tomcat/bin/catalina.sh", "run"]
+CMD ["/opt/tomcat/bin/catalina.sh", "run"]
