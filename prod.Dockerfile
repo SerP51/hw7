@@ -1,5 +1,5 @@
 FROM alpine:latest
-RUN apk add --no-cache openjdk11
+RUN apk add --no-cache openjre11
 #RUN apk add --no-cache tomcat-native
 
 #ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk
