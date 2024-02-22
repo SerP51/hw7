@@ -1,5 +1,5 @@
 FROM adoptopenjdk/openjdk11:x86_64-ubuntu-jre-11.0.22_7
-#RUN apk add wget
+RUN apk add wget
 #RUN apk add --no-cache openjdk11
 #RUN apk add --no-cache tomcat-native
 
