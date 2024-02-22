@@ -1,5 +1,4 @@
 FROM alpine:latest
-RUN apt update
 RUN apk add --no-cache openjdk11 && \
     apk add --no-cache tomcat-native
 
