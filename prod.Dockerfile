@@ -1,5 +1,6 @@
 FROM adoptopenjdk/openjdk11:x86_64-ubi-minimal-jre-11.0.22_7
-RUN apk add ca-certificates wget
+ENV PATH="${PATH}:/sbin"
+RUN apk add --no-cache wget
 #RUN apk add --no-cache openjdk11
 #RUN apk add --no-cache tomcat-native
 
