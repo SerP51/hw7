@@ -1,7 +1,7 @@
-FROM adoptopenjdk/openjdk11:x86_64-ubi-minimal-jre-11.0.22_7
-#RUN apk add --no-cache wget --virtual
+FROM adoptopenjdk/openjdk11:x86_64-ubuntu-jre-11.0.22_7
+#RUN apk add wget
 #RUN apk add --no-cache openjdk11
-RUN apk add --no-cache tomcat-native
+#RUN apk add --no-cache tomcat-native
 
 #ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk
 
